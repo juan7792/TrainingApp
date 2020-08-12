@@ -1,2 +1,5 @@
+# Default ignored files
+/shelf/
+/workspace.xml
 .env
 pruebas.py
