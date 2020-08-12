@@ -227,8 +227,8 @@ Choose what would you like to view: """
         return
 
     # extract reps, intensity and dates from returned cursor, separate entries and store them in lists
-    dummy_reps = [dummy_trainings[i][0].split("-", len(dummy_trainings)) for i in range(len(dummy_trainings))]
-    dummy_intensities = [dummy_trainings[i][1].split("-", len(dummy_trainings)) for i in range(len(dummy_trainings))]
+    dummy_reps = [dummy_trainings[i][0].split("-") for i in range(len(dummy_trainings))]
+    dummy_intensities = [dummy_trainings[i][1].split("-") for i in range(len(dummy_trainings))]
     dates = [dummy_trainings[i][2] for i in range(len(dummy_trainings))]
 
     # parse reps and intensity from list of string into list of integers
