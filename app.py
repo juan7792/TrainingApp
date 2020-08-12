@@ -17,8 +17,8 @@ menu_2 = """Please choose your option:
 1) Add exercise
 2) Add training
 3) View training
-4) View training volume history
-5) View user's muscle groups divisions and exercises
+4) View training volume
+5) View muscle groups and exercises
 6) Exit
 
 Your option: """
