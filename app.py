@@ -138,12 +138,12 @@ def insert_training(user_id):
     sets_training = check_positive_input(message_sets)
 
     # enter reps and only allow valid input using number of sets as parameter
-    message_sets = "Enter number of reps per set separated by '-' (e.g. 3 sets of 5 reps: 5-5-5): "
-    reps_training = check_reps_or_intensity(sets_training, message_sets)
+    message_reps = "Enter number of reps per set separated by '-' (e.g. 3 sets of 5 reps: 5-5-5): "
+    reps_training = check_reps_or_intensity(sets_training, message_reps)
 
     # enter the intensity per rep and only allow valid input using number of sets as parameter
-    message_reps = "Enter weight lifted per set separated by '-' in kg (e.g. 3 sets with 40kg: 40-40-40): "
-    intensity_training = check_reps_or_intensity(sets_training, message_reps)
+    message_intensity = "Enter weight lifted per set separated by '-' in kg (e.g. 3 sets with 40kg: 40-40-40): "
+    intensity_training = check_reps_or_intensity(sets_training, message_intensity)
 
     # enter workout type - body building, powerlifting, functional, etc.
     workout_type = input("Enter the workout type (e.g. body building, powerlifting): ")
