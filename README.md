@@ -32,7 +32,7 @@ and the inputs are stored in the table "exercises". It is necessary to add exerc
 #### Add training (Table: trainings)
 In this function, the existing exercises are listed and the app asks the user to input the ID number of his desired exercise. If a desired exercise is not included in the list, one
 of the options of this function allows the user to add an exercise and then return to the "Add training" function. Once an exercise is added, the app asks the user to input the 
-date (dd-mm-YYYY), the number of sets done in this exercise, the number of repetitions on each set, the weight lifted on each set, the type of workout (e.g. bodybuilding, 
+date, the number of sets done in this exercise, the number of repetitions on each set, the weight lifted on each set, the type of workout (e.g. bodybuilding, 
 powerlifting), the body weight [kg] and any observations made. Finally, the inputs are added to the table "trainings".
 
 #### View training
