@@ -70,6 +70,6 @@ In this branch, the queries are written to be executed using SQLite with the hel
 entries if you want to try out the app.
 
 ### app_postgresql
-The code for this branch corresponds to queries to be executed in PostgreSQL. The remote database is __not__ forhanded (environmental variable), but the code in app.py is the 
+The code for this branch corresponds to queries to be executed in PostgreSQL using the library psycopg2-binary. The remote database is __not__ forhanded (environmental variable), but the code in app.py is the 
 same as in SQLite.
 
