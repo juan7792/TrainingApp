@@ -15,7 +15,30 @@ The SQL queries are written in this file and the functions are called in the app
 ### TrainingApp.pdf
 The flowchart for the operations of the app are contained in this file.
 
-## 2) Main functions
+## 2) Tables
+
+### users
+This table contains the usernames added to the database, each identified with an unique ID integer.
+
+### exercises
+Tables users and exercises hold a relationship using the user ID. In the table "exercises", the exercises with their attached muscle groups are stored and uniquely identified
+with an integer ID.
+
+### trainings
+This last table holds a relationship with table "users" and "exercises" using the user ID and exercise ID of the latter tables as foreign keys. The details of each training 
+log are stored in the table "trainings" and this table has as a primary key a column with the training ID.
+
+## 3) Branches
+
+### app_sqlite
+In this branch, the queries are written to be executed using SQLite with the help of the library sqlite3. A local database (data_training.db) is forehanded with some sample 
+entries if you want to try out the app.
+
+### app_postgresql
+The code for this branch corresponds to queries to be executed in PostgreSQL using the library psycopg2-binary. The remote database is __not__ forhanded (environmental variable), but the code in app.py is the 
+same as in SQLite.
+
+## 4) Main functions
 
 ### Menu 1
 #### Add user (Table: users)
@@ -49,27 +72,4 @@ This last function allows the user to check his added muscle groups and the exer
 #### __IMPORTANT__
 For the inputs, it is necessary to follow the format given in the text that appears after before making an input. Nevertheless, the app should not allow the user to input
 something different than he should (and if so, please let me know).
-
-## 3) Tables
-
-### users
-This table contains the usernames added to the database, each identified with an unique ID integer.
-
-### exercises
-Tables users and exercises hold a relationship using the user ID. In the table "exercises", the exercises with their attached muscle groups are stored and uniquely identified
-with an integer ID.
-
-### trainings
-This last table holds a relationship with table "users" and "exercises" using the user ID and exercise ID of the latter tables as foreign keys. The details of each training 
-log are stored in the table "trainings" and this table has as a primary key a column with the training ID.
-
-## 4) Branches
-
-### app_sqlite
-In this branch, the queries are written to be executed using SQLite with the help of the library sqlite3. A local database (data_training.db) is forehanded with some sample 
-entries if you want to try out the app.
-
-### app_postgresql
-The code for this branch corresponds to queries to be executed in PostgreSQL using the library psycopg2-binary. The remote database is __not__ forhanded (environmental variable), but the code in app.py is the 
-same as in SQLite.
 
