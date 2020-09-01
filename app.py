@@ -190,7 +190,8 @@ Choose what would you like to view: """
     trainings = [list(training) for training in dummy_trainings]
 
     # convert timestamps to dates
-    for i in range(len(trainings)): trainings[i][0] = parse_input_timestamp_to_date(trainings[i][0])
+    for i in range(len(trainings)):
+        trainings[i][0] = parse_input_timestamp_to_date(trainings[i][0])
 
     # print table with trainings
     header_trainings = ("Date", "Muscle group", "Exercise", "Sets", "Reps", "Intensity [kg]", "Discipline",
@@ -214,6 +215,7 @@ def view_training_volume(user_id):
 3) View desired training volume period
 4) Return to menu
 Choose what would you like to view: """
+    # cursor with trainings
     dummy_trainings = select_view_option(user_id, message_training_volume, selection="volume",
                                          muscle_group=selected_muscle_group)
 
@@ -240,6 +242,7 @@ Choose what would you like to view: """
 
     # find unique values in dates for training volume
     unique_dates = list(set(dates))
+    unique_dates.sort()
 
     # locate positions of unique values and store them in different lists
     index_dates = [list(locate(dates, lambda a: a == unique_dates[i])) for i in range(len(unique_dates))]
@@ -265,7 +268,9 @@ Choose what would you like to view: """
         plt.plot_date(unique_dates, volume, color='b', linestyle='-', linewidth=2)
         plt.xlabel("Dates (dd-mm-YYYY)")
         plt.ylabel("Training volume [kg]")
-        plt.title("Training volume history")
+        plt.title(f"Training volume history ({selected_muscle_group} split)")
+        plt.subplots_adjust(bottom=0.3)
+        plt.xticks(rotation=30)
         plt.show()
 
 
