@@ -181,7 +181,7 @@ Choose what would you like to view: """
         print("\n--- Returning to menu ---\n")
         return
 
-    # show message if no training was found in the selected date
+    # show message if no training was found in the selected date and return
     if not dummy_trainings:
         print("\nNo training on this date or invalid date period!\n")
         return
