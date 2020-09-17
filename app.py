@@ -270,7 +270,7 @@ Choose what would you like to view: """
         plt.ylabel("Training volume [kg]")
         plt.title(f"Training volume history ({selected_muscle_group} split)")
         plt.subplots_adjust(bottom=0.3)
-        plt.xticks(rotation=30)
+        plt.xticks(rotation=30, ha="right")
         plt.show()
 
 
