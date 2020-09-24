@@ -16,12 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/app_sqlite" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64221475-db24-4818-a746-26b88b88ed3f" name="Default Changelist" comment="">
+    <list default="true" id="64221475-db24-4818-a746-26b88b88ed3f" name="Default Changelist" comment="added entries to DB and relocated labels in x-axis to the right">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_training.db" beforeDir="false" afterPath="$PROJECT_DIR$/data_training.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +116,14 @@
       <option name="presentableId" value="Default" />
       <updated>1597256369896</updated>
     </task>
+    <task id="LOCAL-00001" summary="added entries to DB and relocated labels in x-axis to the right">
+      <created>1600354921342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600354921342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,29 +131,45 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/app_sqlite" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added entries to DB and relocated labels in x-axis to the right" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entries to DB and relocated labels in x-axis to the right" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="319" key="GridCell.Tab.0.bottom" timestamp="1600354593568">
+    <state width="1515" height="131" key="GridCell.Tab.0.bottom" timestamp="1600871007935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600354593568" />
-    <state width="1515" height="319" key="GridCell.Tab.0.center" timestamp="1600354593568">
+    <state width="1515" height="131" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600871007935" />
+    <state width="1515" height="131" key="GridCell.Tab.0.center" timestamp="1600871007935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600354593568" />
-    <state width="1515" height="319" key="GridCell.Tab.0.left" timestamp="1600354593568">
+    <state width="1515" height="131" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600871007935" />
+    <state width="1515" height="131" key="GridCell.Tab.0.left" timestamp="1600871007935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600354593568" />
-    <state width="1515" height="319" key="GridCell.Tab.0.right" timestamp="1600354593568">
+    <state width="1515" height="131" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600871007935" />
+    <state width="1515" height="131" key="GridCell.Tab.0.right" timestamp="1600871007935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600354593568" />
+    <state width="1515" height="131" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600871007935" />
   </component>
 </project>
