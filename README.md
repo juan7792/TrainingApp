@@ -1,6 +1,6 @@
 # TrainingApp
 TrainingApp was developed in Python to store and retrieve training logs using SQL (SQLite and PostgreSQL). It allows the user to create an account, store his 
-personal training logs in it and view the history of his trainings and training volumes.
+personal training logs in it and view the history of his trainings and training volumes. The flowchart of the App is available in __TrainingApp.pdf__.
 
 ## Summary
 
